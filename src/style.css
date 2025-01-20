@@ -33,14 +33,14 @@ body{
     margin-right: 5px;
 }
 
-.btn-add{
+.btnAdd{
     font-size: 20px;
     padding: 5px;
     border-radius: 10%;
     background-color: rgb(43, 148, 233);
     margin: 0 30px;
 }
-.btn-filter{
+.btnFind{
     font-size: 20px;
     padding: 5px;
     border-radius: 10%;
@@ -101,7 +101,14 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
 }
 .post-list ul{
-    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+.btnDel {
+    background-color: red;
+    border-radius: 15px;
+    height: 20px;
+    font-size: 10px;
 }
 
 .btn-bg-red{
