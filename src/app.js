@@ -8,38 +8,43 @@ const inputFind = document.querySelector('.inputFind');
 const btnAdd = document.querySelector('.btnAdd');
 const btnFind = document.querySelector('.btnFind');
 
-// Agragar funciones a los botones de color
 
 function saludar(){
     let nombre = prompt('Como te llamas ? :')
-    if(nombre !== ""){
+    if(nombre !==""){
         alert(`Hola!!,Bienvenido a mi To-do-list ${nombre.toUpperCase()}`);
+        document.body.style.display = 'none';
     }else {
         alert(`Necesito tu nombre para saludarte, no te voy a mostar la pagina😢`);
         alert(`Refresca la pagina y pon tu nombre o no te neseño la pagina 😑`);
+        document.body.style.display = 'none';
     }
 }
+saludar();
+
+// Agragar funciones a los botones de color
 
 function cambiarColorFondo (btnClass,color,colorFont){
     const btn = document.querySelector(btnClass);
     if(btn){
         btn.addEventListener('click',function (){
-        containerTitle.style.backgroundColor = color;
-        containerTitle.style.color = colorFont;
-        postList.style.backgroundColor = color;
-        postList.style.color = colorFont;
+            containerTitle.style.backgroundColor = color;
+            containerTitle.style.color = colorFont;
+            postList.style.backgroundColor = color;
+            postList.style.color = colorFont;
         })
     }
 }
-
 cambiarColorFondo('.btn-bg-red','red','white');
 cambiarColorFondo('.btn-bg-yellow','yellow','black');
 cambiarColorFondo('.btn-bg-green','green','white');
 cambiarColorFondo('.btn-bg-cyan','cyan','black');
 cambiarColorFondo('.house','rgb(217, 217, 217)','black');
 
-// saludar()
+
 // Agregar funcionas fuera del cambio de color que tengo encima
+
+
 btnAdd.addEventListener('click', () => {
     try {
         let textInputAdd = inputAdd.value.trim();
