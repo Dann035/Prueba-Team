@@ -344,7 +344,7 @@ body{
     }
 
 }
-@media (max-width : 425px) {
+@media screen and (max-width: 425px) {
     .post-list {
         width: 100%;
         height: 100%;
