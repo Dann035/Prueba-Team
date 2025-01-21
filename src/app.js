@@ -13,7 +13,7 @@ function saludar(){
     let nombre = prompt('Como te llamas ? :')
     if(nombre !==""){
         alert(`Hola!!,Bienvenido a mi To-do-list ${nombre.toUpperCase()}`);
-        document.body.style.display = 'none';
+        document.body.style.display = 'block';
     }else {
         alert(`Necesito tu nombre para saludarte, no te voy a mostar la pagina😢`);
         alert(`Refresca la pagina y pon tu nombre o no te neseño la pagina 😑`);
